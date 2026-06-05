@@ -3,7 +3,7 @@ identity_token "aws" {
 }
 
 store "varset" "workload_identity" {
-  name     = "<your-varset-name>"
+  name     = "AWS-test Variable Set   
   category = "terraform"
 }
 
