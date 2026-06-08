@@ -33,3 +33,14 @@ deployment "example_us_west" {
     identity_token = identity_token.aws.jwt
   }
 }
+
+
+
+deployment "example_ap_south" {
+  inputs = {
+    region         = "ap-south-1"
+    tags           = { environment = "dev" }
+    role_arn       = store.varset.workload_identity.aws_role_arn
+    identity_token = identity_token.aws.jwt
+  }
+}
